@@ -81,6 +81,25 @@ def apply_smote(data_path, target_column, test_size=0.2, random_state=42):
 
     return X_train_resampled, X_test, y_train_resampled, y_test
 
-data_path = "data/diabetes.csv"  # Update with the correct path
-target_column = "Outcome"  # Update with the correct target column name
-X_train, X_test, y_train, y_test = apply_smote(data_path, target_column)
+# data_path = "data/diabetes.csv"  # Update with the correct path
+# target_column = "Outcome"  # Update with the correct target column name
+# X_train, X_test, y_train, y_test = apply_smote(data_path, target_column)
+
+# function for correlation among variables
+
+def coorelation(df):
+    corr = df.corr()
+    #plot corr
+    plt.figure(figsize=(10,8))
+    sns.heatmap(corr, annot=True, cmap='coolwarm', square=True)
+    plt.plot()
+    plt.show()
+    # print(corr)
+    
+def stat(df,col):
+    # mean , mode , min , max 
+    print(df[col].mean())
+    
+    
+
+
