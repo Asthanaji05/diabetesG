@@ -11,5 +11,25 @@ from ML.common import read_csv
 df = read_csv("data", "diabetes.csv")
 print(df.head())
 
-# add a histogram of the 'Glucose' column
-plt.hist(df['Glucose'], bins=10, color='blue', edgecolor='black')
+
+def plot_histogram(df, col):
+    # add a histogram of the 'Glucose' column
+    plt.hist(df[col], bins=10, color='limegreen', edgecolor='black')
+    plt.plot()
+    plt.show()
+
+def plot_box(df,col):
+    # box plot of Glucose
+    #green color
+    sns.boxplot(x=df[col], color='limegreen')
+    plt.plot()
+    plt.show()
+    
+def count_cat(df,col):
+    # count zeros and ones
+    print(df[col].value_counts())
+
+    
+# plot_histogram(df, 'Glucose')
+# plot_box(df,'Glucose')
+count_cat(df,'Outcome')
