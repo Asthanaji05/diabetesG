@@ -1,0 +1,12 @@
+{
+    "alpha": 0.1,
+    "copy_X": true,
+    "fit_intercept": false,
+    "max_iter": 1000,
+    "positive": false,
+    "precompute": false,
+    "random_state": null,
+    "selection": "random",
+    "tol": 0.0001,
+    "warm_start": false
+}

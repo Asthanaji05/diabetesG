@@ -1,0 +1,17 @@
+{
+    "C": 0.1,
+    "average": false,
+    "class_weight": null,
+    "early_stopping": false,
+    "fit_intercept": true,
+    "loss": "hinge",
+    "max_iter": 1008,
+    "n_iter_no_change": 5,
+    "n_jobs": null,
+    "random_state": null,
+    "shuffle": true,
+    "tol": 0.001,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+}
