@@ -2,7 +2,7 @@
     "bootstrap": true,
     "ccp_alpha": 0.0,
     "class_weight": null,
-    "criterion": "entropy",
+    "criterion": "gini",
     "max_depth": 10,
     "max_features": "log2",
     "max_leaf_nodes": null,

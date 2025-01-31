@@ -1,5 +1,5 @@
 {
-    "C": 1,
+    "C": 0.1,
     "class_weight": null,
     "dual": false,
     "fit_intercept": true,
@@ -8,7 +8,7 @@
     "max_iter": 1008,
     "multi_class": "auto",
     "n_jobs": null,
-    "penalty": "l2",
+    "penalty": null,
     "random_state": null,
     "solver": "lbfgs",
     "tol": 0.0001,

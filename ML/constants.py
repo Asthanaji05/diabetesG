@@ -2,6 +2,7 @@ DATA_DIR = "data"
 DATA_FILE = "data.csv"
 BEST_MODELS_DIR = "ML/Models"
 RESULTS_DIR = "Results"
+
 import os
 from sklearn.ensemble import GradientBoostingClassifier , RandomForestClassifier, AdaBoostClassifier
 from xgboost import XGBClassifier
@@ -32,7 +33,6 @@ MODEL_DICT = {
     "cat": CatBoostClassifier(),
     # "rbm": BernoulliRBM(n_components=256, learning_rate=0.01, n_iter=MAX_ITER)
 }
- 
 MODEL_PARAMS = {
     "gbc": {'learning_rate': [0.1, 0.5, 1],
             'n_estimators': [100, 200, 300],
@@ -102,4 +102,28 @@ MODEL_PARAMS = {
             'learning_rate': [0.01, 0.05, 0.1, 0.5]
             },
 
+}
+
+
+BEST_MODELS_DICT = {
+        "gbc": GradientBoostingClassifier()
+}
+BEST_MODELS_PARAM = {
+        "gbc":{
+        "ccp_alpha": 0.0,
+    "criterion": "friedman_mse",
+    "learning_rate": 0.5,
+    "loss": "log_loss",
+    "max_depth": 10,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "n_estimators": 100,
+    "subsample": 1.0,
+    "tol": 0.0001,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": False
+        }
 }

@@ -18,3 +18,19 @@
       7. scaling/ normalization
       8. SMOTE
    3. Data Cleaning
+   4. SMOTE for Training set only
+   5. Scaling 
+   6. Test data is not neede for SMOTE
+3. Select some ML Models
+4. Hypertune Models and CRoss Validation
+5. Save Models as JSON and report 
+6. Load The model 
+7. Train The Model
+8. Test The Model
+9. Evaluation
+
+
+
+----
+- ANTLR
+- 

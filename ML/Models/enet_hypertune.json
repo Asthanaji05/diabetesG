@@ -7,7 +7,7 @@
     "positive": false,
     "precompute": false,
     "random_state": null,
-    "selection": "cyclic",
+    "selection": "random",
     "tol": 0.0001,
     "warm_start": false
 }

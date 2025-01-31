@@ -41,9 +41,11 @@ features = scaled_features.to_numpy()
 labels = labels.astype(int)  # Ensure labels are integer type
 
 # Train models
-ML.trainer.perform_hyperparameter_tuning(
-    features, labels,
-    model_dict=constants.MODEL_DICT,
-    model_param=constants.MODEL_PARAMS,
-    binary_flag=True
-)
+# ML.trainer.perform_hyperparameter_tuning(
+#     features, labels,
+#     model_dict=constants.MODEL_DICT,
+#     model_param=constants.MODEL_PARAMS,
+#     binary_flag=True
+# )
+
+ML.trainer.train_model(features,labels,'gbc',binary_flag=True)

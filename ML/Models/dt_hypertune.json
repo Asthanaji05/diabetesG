@@ -1,7 +1,7 @@
 {
     "ccp_alpha": 0.0,
     "class_weight": null,
-    "criterion": "log_loss",
+    "criterion": "gini",
     "max_depth": 10,
     "max_features": null,
     "max_leaf_nodes": null,
